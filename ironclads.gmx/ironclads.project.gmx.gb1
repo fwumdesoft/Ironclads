@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<assets>
+  <Configs name="configs">
+    <Config>Configs\Default</Config>
+  </Configs>
+  <sprites name="sprites">
+    <sprite>sprites\spr_placholder</sprite>
+    <sprite>sprites\spr_cannonball</sprite>
+  </sprites>
+  <sounds name="sound"/>
+  <backgrounds name="background"/>
+  <paths name="paths"/>
+  <scripts name="scripts"/>
+  <shaders name="shaders"/>
+  <fonts name="fonts"/>
+  <timelines name="timelines"/>
+  <objects name="objects">
+    <object>objects\obj_cannonball</object>
+    <object>objects\obj_monitor</object>
+    <object>objects\obj_merrimack</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_main</room>
+  </rooms>
+  <help>
+    <rtf>help.rtf</rtf>
+  </help>
+</assets>
