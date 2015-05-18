@@ -12,6 +12,9 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\find_quadrant.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_cannonball</object>
     <object>objects\obj_monitor</object>

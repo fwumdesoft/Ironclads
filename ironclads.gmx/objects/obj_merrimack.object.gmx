@@ -8,30 +8,6 @@
   <parentName>obj_ship</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>event_inherited()
-friction = 0.01
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -81,6 +57,22 @@ if(keyboard_check(ord('D')) and timeout &lt;= 0)
         cannon.speed = 10;
         cannon.parent = object_index;
     }
+    timeout = 45;
+}
+if(keyboard_check(ord('W')) and timeout &lt;= 0)
+{
+    var cannon = instance_create(x + lengthdir_x(sprite_width / 2, -image_angle), y + lengthdir_y(sprite_width, image_angle), obj_cannonball);
+    cannon.direction = direction;
+    cannon.speed = 10;
+    cannon.parent = object_index;
+    timeout = 45;
+}
+if(keyboard_check(ord('S')) and timeout &lt;= 0)
+{
+    var cannon = instance_create(x + lengthdir_x(sprite_width / 2, -image_angle), y + lengthdir_y(sprite_width, -image_angle), obj_cannonball);
+    cannon.direction = 180 - direction;
+    cannon.speed = 10;
+    cannon.parent = object_index;
     timeout = 45;
 }
 if(timeout &gt; 0)

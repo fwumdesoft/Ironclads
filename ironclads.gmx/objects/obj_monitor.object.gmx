@@ -25,11 +25,51 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mp_potential_settings(5, 10, 3, false);
-mp_potential_step(obj_merrimack.x, obj_merrimack.y, 3, true);
+            <string>/*var otherquadrant, facequadrant, otherdir;
+otherdir = point_direction(x, y, obj_merrimack.x, obj_merrimack.y);
+//Calculate what quadrant the other ship falls into
+otherquadrant = find_quadrant(otherdir);
+//Calculate current facing quadrant
+facequadrant = find_quadrant(direction);
+//If same- turn to face other ship
+if(otherquadrant == facequadrant)
+{
+    if(direction - otherdir &lt; -1)
+    {
+        direction += 0.5;
+    }
+    else if(direction - otherdir &gt; 1)
+    {
+        direction -= 0.5;
+    }
+    else
+        if(speed &lt; 3)
+            speed += 0.2;
+}
+else
+//If different- turn to face quadrant
+{
+    //Opposite quadrant
+    if(abs(facequadrant-otherquadrant) == 2)
+    {
+        direction += 0.5;    
+    }
+    //Quadrant to the left
+    else if(facequadrant + 1 == otherquadrant or (facequadrant == 1 and otherquadrant == 4))
+    {
+        direction += 0.5;    
+    }
+    //Quadrant to the right
+    else if(facequadrant - 1 == otherquadrant or (facequadrant == 4 and otherquadrant == 1))
+    {
+        direction -= 0.5;    
+    }
+}*/
+//PLACEHOLDER: 
+mp_potential_settings(0.5, 0.5, 1, false);
+mp_potential_step(obj_merrimack.x, obj_merrimack.y, 0.6, false);
 direction = point_direction(xprevious, yprevious, x, y)
-image_angle = direction
-move_wrap(room_width, room_height, 100)
+//Fire
 if(timeout &lt;= 0)
 {
     for(var i = 0; i &lt;= 0; i++)
@@ -43,6 +83,9 @@ if(timeout &lt;= 0)
 }
 if(timeout &gt;= 0)
     timeout --;
+//Basic stuff
+image_angle = direction
+move_wrap(room_width, room_height, 100)
 </string>
           </argument>
         </arguments>
