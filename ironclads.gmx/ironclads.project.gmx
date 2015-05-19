@@ -9,6 +9,7 @@
     <sprite>sprites\spr_placholder</sprite>
     <sprite>sprites\spr_cannonball</sprite>
     <sprite>sprites\spr_merrimack</sprite>
+    <sprite>sprites\spr_monitor</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
