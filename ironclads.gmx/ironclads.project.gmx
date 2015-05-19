@@ -12,7 +12,9 @@
     <sprite>sprites\spr_monitor</sprite>
     <sprite>sprites\spr_turret</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bkg_water</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\find_quadrant.gml</script>
