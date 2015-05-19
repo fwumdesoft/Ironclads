@@ -25,6 +25,7 @@
     <object>objects\obj_merrimack</object>
     <object>objects\obj_ship</object>
     <object>objects\obj_turret</object>
+    <object>objects\obj_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

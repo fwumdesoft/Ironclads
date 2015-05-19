@@ -81,6 +81,10 @@ if(speed &gt; 3)
     speed = 3;
 image_angle = direction;
 move_wrap(room_width, room_height, 100)
+if(abs(speed) &gt;= 1)
+    moving = true
+else
+    moving = false
 </string>
           </argument>
         </arguments>

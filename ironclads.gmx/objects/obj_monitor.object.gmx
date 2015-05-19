@@ -25,46 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*var otherquadrant, facequadrant, otherdir;
-otherdir = point_direction(x, y, obj_merrimack.x, obj_merrimack.y);
-//Calculate what quadrant the other ship falls into
-otherquadrant = find_quadrant(otherdir);
-//Calculate current facing quadrant
-facequadrant = find_quadrant(direction);
-//If same- turn to face other ship
-if(otherquadrant == facequadrant)
-{
-    if(direction - otherdir &lt; -1)
-    {
-        direction += 0.5;
-    }
-    else if(direction - otherdir &gt; 1)
-    {
-        direction -= 0.5;
-    }
-    else
-        if(speed &lt; 3)
-            speed += 0.2;
-}
-else
-//If different- turn to face quadrant
-{
-    //Opposite quadrant
-    if(abs(facequadrant-otherquadrant) == 2)
-    {
-        direction += 0.5;    
-    }
-    //Quadrant to the left
-    else if(facequadrant + 1 == otherquadrant or (facequadrant == 1 and otherquadrant == 4))
-    {
-        direction += 0.5;    
-    }
-    //Quadrant to the right
-    else if(facequadrant - 1 == otherquadrant or (facequadrant == 4 and otherquadrant == 1))
-    {
-        direction -= 0.5;    
-    }
-}*/
+            <string>moving = false
 if(distance_to_object(obj_merrimack) &gt; RANGE / 4)
 {
     mp_potential_settings(0.5, 0.5, 1, false);
@@ -72,7 +33,9 @@ if(distance_to_object(obj_merrimack) &gt; RANGE / 4)
     direction = point_direction(xprevious, yprevious, x, y)
     image_angle = direction
     move_wrap(room_width, room_height, 100)
+    moving = true
 }
+event_inherited()
 </string>
           </argument>
         </arguments>
