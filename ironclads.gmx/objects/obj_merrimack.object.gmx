@@ -27,11 +27,11 @@
             <kind>1</kind>
             <string>if(keyboard_check(vk_left))
 {
-    direction += 0.05 * speed;
+    direction += 0.1 * speed;
 }
 if(keyboard_check(vk_right))
 {
-    direction -= 0.05 * speed;
+    direction -= 0.1 * speed;
 }
 if(keyboard_check(vk_up))
 {

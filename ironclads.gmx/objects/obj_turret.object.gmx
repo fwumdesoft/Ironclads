@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>x = obj_monitor.x
 y = obj_monitor.y
-if(timeout &lt;= 0)
+if(timeout &lt;= 0 and distance_to_object(obj_merrimack) &lt;= RANGE)
 {
     for(var i = 0; i &lt;= 0; i++)
     {
