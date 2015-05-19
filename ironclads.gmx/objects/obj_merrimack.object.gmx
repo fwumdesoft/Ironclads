@@ -70,7 +70,7 @@ if(keyboard_check(ord('W')) and timeout &lt;= 0)
 if(keyboard_check(ord('S')) and timeout &lt;= 0)
 {
     var cannon = instance_create(x + lengthdir_x(sprite_width / 2, -image_angle), y + lengthdir_y(sprite_width, -image_angle), obj_cannonball);
-    cannon.direction = 180 - direction;
+    cannon.direction = direction + 180;
     cannon.speed = 10;
     cannon.parent = object_index;
     timeout = 45;
