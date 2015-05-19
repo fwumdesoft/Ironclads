@@ -10,6 +10,7 @@
     <sprite>sprites\spr_cannonball</sprite>
     <sprite>sprites\spr_merrimack</sprite>
     <sprite>sprites\spr_monitor</sprite>
+    <sprite>sprites\spr_turret</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,6 +22,7 @@
     <object>objects\obj_monitor</object>
     <object>objects\obj_merrimack</object>
     <object>objects\obj_ship</object>
+    <object>objects\obj_turret</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
