@@ -19,6 +19,9 @@
   <scripts name="scripts">
     <script>scripts\find_quadrant.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_cuts</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_cannonball</object>
     <object>objects\obj_monitor</object>
@@ -26,8 +29,13 @@
     <object>objects\obj_ship</object>
     <object>objects\obj_turret</object>
     <object>objects\obj_control</object>
+    <object>objects\obj_cutscene</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\tl_opening</timeline>
+  </timelines>
   <rooms name="rooms">
+    <room>rooms\rm_opening</room>
     <room>rooms\rm_main</room>
   </rooms>
   <constants number="2">

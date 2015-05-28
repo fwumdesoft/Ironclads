@@ -25,72 +25,69 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sHealth = 10;
-timeout = 0;
-friction = 0.01
-part_system = part_system_create()
-emitter = part_emitter_create(part_system);
-spray = part_type_create()
-part_type_life(spray, 65, 95)
-part_type_speed(spray, 6, 9, -0.1, 0)
-part_type_colour_hsv(spray, 125, 135, 200, 255, 200, 255)
-part_system_automatic_draw(part_system, false)
-moving = false
+            <string>text = ""
+
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>612</id>
+        <kind>0</kind>
         <userelative>0</userelative>
-        <isquestion>0</isquestion>
+        <isquestion>-1</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>part_system_position(part_system, x + lengthdir_x(sprite_width / 2, direction), y + lengthdir_y(sprite_width / 2, direction))
-part_type_direction(spray, direction - 200, direction - 160, 0, 0)
-if(moving)
-    part_emitter_burst(part_system, emitter, spray, irandom_range(5, 10))
-</string>
+            <kind>0</kind>
+            <string>room</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>rm_opening</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_cannonball">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>305</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_timeline_set</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>if(other.parent != object_index)
-{
-    sHealth -= 1
-    with(other)
-        instance_destroy();
-}
-</string>
+            <kind>14</kind>
+            <timeline>tl_opening</timeline>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -112,8 +109,9 @@ if(moving)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_system_drawit(part_system)
-draw_self()
+            <string>draw_set_color(c_white)
+draw_set_font(fnt_cuts)
+draw_text_ext(room_width / 4, room_height / 3, text, 45, room_width / 2)
 </string>
           </argument>
         </arguments>
