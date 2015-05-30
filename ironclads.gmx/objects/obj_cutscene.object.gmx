@@ -111,7 +111,7 @@
             <kind>1</kind>
             <string>draw_set_color(c_white)
 draw_set_font(fnt_cuts)
-draw_text_ext(room_width / 4, room_height / 3, text, 45, room_width / 2)
+draw_text_ext(0, room_height / 3, text, 45, room_width)
 </string>
           </argument>
         </arguments>
