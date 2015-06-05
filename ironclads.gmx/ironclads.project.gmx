@@ -11,6 +11,8 @@
     <sprite>sprites\spr_merrimack</sprite>
     <sprite>sprites\spr_monitor</sprite>
     <sprite>sprites\spr_turret</sprite>
+    <sprite>sprites\spr_congress</sprite>
+    <sprite>sprites\spr_cumberland</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_water</background>
