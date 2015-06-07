@@ -8,6 +8,31 @@
   <parentName>obj_ship</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_inherited()
+audio_play_sound(snd_monitor_move, 50, true)
+moving = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,7 +50,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>moving = false
+            <string>prev_moving = moving
+moving = false
 if(distance_to_object(obj_merrimack) &gt; RANGE / 4)
 {
     mp_potential_settings(0.5, 0.5, 1, false);
@@ -35,6 +61,10 @@ if(distance_to_object(obj_merrimack) &gt; RANGE / 4)
     move_wrap(room_width, room_height, 100)
     moving = true
 }
+if(!prev_moving and moving)
+    audio_sound_gain(snd_monitor_move, 1, 300)
+else if(prev_moving and !moving)
+    audio_sound_gain(snd_monitor_move, 0, 500)
 event_inherited()
 </string>
           </argument>

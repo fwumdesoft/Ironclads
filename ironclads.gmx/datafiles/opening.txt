@@ -12,4 +12,6 @@ This made it a prime target for your cannons.
 During the engagement, Captain Buchanan was killed.
 Now, you are the captain.
 The USS Minnesota ran aground during the battle.
+Reports of a new Union ship have reached you.
+Your cannons will make short work of it.
 Your goal is to finish the battle and break the blockade.

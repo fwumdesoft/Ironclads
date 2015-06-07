@@ -59,7 +59,7 @@ if(timeout &lt;= 0 and distance_to_object(obj_merrimack) &lt;= RANGE)
         with(cannon)
             move_towards_point(obj_merrimack.x, obj_merrimack.y, 10);
     }
-    timeout = 50;
+    timeout = 150;
 }
 if(timeout &gt;= 0)
     timeout --;

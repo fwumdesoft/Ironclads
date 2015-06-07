@@ -27,7 +27,10 @@
             <kind>1</kind>
             <string>if room == rm_opening
     file = file_text_open_read("opening.txt");
-
+else if room == rm_win
+    file = file_text_open_read("win.txt");
+else if room == rm_lose
+    file = file_text_open_read("lose.txt");
 line = file_text_readln(file)
 current = ""
 index = 1

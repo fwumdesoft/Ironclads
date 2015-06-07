@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles">
+  <datafiles number="3" name="datafiles">
     <datafile>
       <name>opening.txt</name>
       <exists>-1</exists>
@@ -21,9 +21,47 @@
       </ConfigOptions>
       <filename>opening.txt</filename>
     </datafile>
+    <datafile>
+      <name>win.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>win.txt</filename>
+    </datafile>
+    <datafile>
+      <name>lose.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>lose.txt</filename>
+    </datafile>
   </datafiles>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_pew</sound>
+    <sound>sound\snd_monitor_move</sound>
+    <sound>sound\snd_merrimack_move</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_placholder</sprite>
     <sprite>sprites\spr_cannonball</sprite>
@@ -33,9 +71,11 @@
     <sprite>sprites\spr_congress</sprite>
     <sprite>sprites\spr_cumberland</sprite>
     <sprite>sprites\spr_minnesotta</sprite>
+    <sprite>sprites\spr_bounds</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_water</background>
+    <background>background\tl_ground</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -53,13 +93,20 @@
     <object>objects\obj_control</object>
     <object>objects\obj_cutscene</object>
     <object>objects\obj_textscroll</object>
+    <object>objects\obj_bounds</object>
+    <object>objects\obj_hazard</object>
+    <object>objects\obj_congress</object>
+    <object>objects\obj_cumblerland</object>
+    <object>objects\obj_minnesota</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tl_opening</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_opening</room>
     <room>rooms\rm_main</room>
+    <room>rooms\rm_win</room>
+    <room>rooms\rm_lose</room>
+    <room>rooms\rm_opening</room>
   </rooms>
   <constants number="2">
     <constant name="GM_build_date">42139.4645041898</constant>
