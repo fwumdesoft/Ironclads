@@ -31,6 +31,8 @@ else if room == rm_win
     file = file_text_open_read("win.txt");
 else if room == rm_lose
     file = file_text_open_read("lose.txt");
+else if room == rm_destroyed
+    file = file_text_open_read("destroyed.txt");
 line = file_text_readln(file)
 current = ""
 index = 1
@@ -88,14 +90,39 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if index &lt; string_length(line)
+            <string>audio_stop_sound(snd_keystroke)
+if index &lt; string_length(line)
 {
     current += string_char_at(line, index)
     index += 1
     alarm[0] = 5
+    audio_play_sound(snd_keystroke, 20, false)
 }
 else
     alarm[1] = 90
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>file_text_close(file)
 </string>
           </argument>
         </arguments>

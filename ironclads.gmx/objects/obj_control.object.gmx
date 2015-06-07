@@ -27,6 +27,33 @@
             <kind>1</kind>
             <string>if(instance_number(obj_control) &gt; 1)
     instance_destroy()    
+audio_play_sound(msc_music, 50, true)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(instance_number(obj_merrimack) == 0 and room == rm_main)
+    room_goto(rm_lose)
+else if(instance_number(obj_monitor) == 0 and room == rm_main)
+    room_goto(rm_win)
 </string>
           </argument>
         </arguments>
@@ -93,7 +120,8 @@ if room == rm_main
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(room != rm_main)
+            <string>if(instance_number(obj_monitor) == 0 or instance_number(obj_merrimack) == 0) exit;
+if(room != rm_main)
     exit;
 draw_set_alpha(0.6)
 draw_set_color(c_black)
@@ -126,6 +154,29 @@ draw_set_alpha(1)
           <argument>
             <kind>1</kind>
             <string>window_set_fullscreen(not window_get_fullscreen())
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(rm_destroyed)
 </string>
           </argument>
         </arguments>

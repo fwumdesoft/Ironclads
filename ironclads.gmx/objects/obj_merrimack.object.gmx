@@ -29,6 +29,69 @@
 audio_play_sound(snd_merrimack_move, 50, true)
 direction = image_angle
 tooltip = read_all_lines("merrimack_tooltip.txt", "#");
+index = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>index += 1
+if(index &lt; 2)
+{
+    var cannon = instance_create(x + lengthdir_x(index * sprite_width / 2, image_angle), y + lengthdir_y(index * sprite_width / 2, image_angle), obj_cannonball);
+    cannon.direction = direction - 90;
+    cannon.speed = 10;
+    cannon.parent = object_index;
+    alarm[1] = 5
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>index += 1
+if(index &lt; 2)
+{
+    var cannon = instance_create(x + lengthdir_x(index * sprite_width / 2, image_angle), y + lengthdir_y(index * sprite_width / 2, image_angle), obj_cannonball);
+    cannon.direction = direction + 90;
+    cannon.speed = 10;
+    cannon.parent = object_index;
+    alarm[0] = 5
+}
 </string>
           </argument>
         </arguments>
@@ -65,25 +128,15 @@ if(keyboard_check(vk_up))
 }
 if(keyboard_check(ord('A')) and timeout &lt;= 0)
 {
-    for(var i = -1; i &lt;= 1; i++)
-    {
-        var cannon = instance_create(x + lengthdir_x(i * sprite_width / 2, image_angle), y + lengthdir_y(i * sprite_width / 2, image_angle), obj_cannonball);
-        cannon.direction = direction + 90;
-        cannon.speed = 10;
-        cannon.parent = object_index;
-    }
-    timeout = 45;
+    index = -2
+    alarm[0] = 5
+    timeout = 85;
 }
 if(keyboard_check(ord('D')) and timeout &lt;= 0)
 {
-     for(var i = -1; i &lt;= 1; i++)
-    {
-        var cannon = instance_create(x + lengthdir_x(i * sprite_width / 2, image_angle), y + lengthdir_y(i * sprite_width / 2, image_angle), obj_cannonball);
-        cannon.direction = direction - 90;
-        cannon.speed = 10;
-        cannon.parent = object_index;
-    }
-    timeout = 45;
+    index = -2
+    alarm[1] = 5
+    timeout = 85;
 }
 if(keyboard_check(ord('W')) and timeout &lt;= 0)
 {
@@ -91,7 +144,7 @@ if(keyboard_check(ord('W')) and timeout &lt;= 0)
     cannon.direction = direction;
     cannon.speed = 10;
     cannon.parent = object_index;
-    timeout = 45;
+    timeout = 65;
 }
 if(keyboard_check(ord('S')) and timeout &lt;= 0)
 {

@@ -51,7 +51,8 @@ tooltip = read_all_lines("monitor_tooltip.txt", "#");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>prev_moving = moving
+            <string>if(instance_number(obj_merrimack) == 0) exit;
+prev_moving = moving
 moving = false
 if(distance_to_object(obj_merrimack) &gt; RANGE / 4)
 {

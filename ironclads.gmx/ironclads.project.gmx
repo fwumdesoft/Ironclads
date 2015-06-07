@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="10" name="datafiles">
+  <datafiles number="11" name="datafiles">
     <datafile>
       <name>opening.txt</name>
       <exists>-1</exists>
@@ -140,12 +140,33 @@
       </ConfigOptions>
       <filename>monitor_tooltip.txt</filename>
     </datafile>
+    <datafile>
+      <name>destroyed.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>destroyed.txt</filename>
+    </datafile>
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_pew</sound>
     <sound>sound\snd_monitor_move</sound>
     <sound>sound\snd_merrimack_move</sound>
+    <sound>sound\msc_music</sound>
+    <sound>sound\snd_keystroke</sound>
+    <sound>sound\snd_impact</sound>
+    <sound>sound\snd_explosion</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_placholder</sprite>
@@ -157,6 +178,8 @@
     <sprite>sprites\spr_cumberland</sprite>
     <sprite>sprites\spr_minnesotta</sprite>
     <sprite>sprites\spr_bounds</sprite>
+    <sprite>sprites\spr_arrows</sprite>
+    <sprite>sprites\spr_explosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_water</background>
@@ -186,15 +209,18 @@
     <object>objects\obj_congress</object>
     <object>objects\obj_cumberland</object>
     <object>objects\obj_minnesota</object>
+    <object>objects\obj_cursor</object>
+    <object>objects\obj_explosion</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tl_opening</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
-    <room>rooms\rm_win</room>
-    <room>rooms\rm_lose</room>
     <room>rooms\rm_opening</room>
+    <room>rooms\rm_win</room>
+    <room>rooms\rm_destroyed</room>
+    <room>rooms\rm_lose</room>
   </rooms>
   <constants number="2">
     <constant name="GM_build_date">42139.4645041898</constant>

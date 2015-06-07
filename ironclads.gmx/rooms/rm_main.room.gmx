@@ -51,17 +51,18 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_merrimack" x="1344" y="1360" name="inst_3693E0DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="190"/>
+    <instance objName="obj_merrimack" x="2384" y="2240" name="inst_3693E0DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="190"/>
     <instance objName="obj_control" x="0" y="0" name="inst_BFB9EEA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounds" x="0" y="32" name="inst_54D82279" locked="0" code="" scaleX="125" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounds" x="0" y="3936" name="inst_5F9FCF12" locked="0" code="" scaleX="125" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounds" x="3936" y="0" name="inst_A9EE4822" locked="0" code="" scaleX="1" scaleY="124" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounds" x="32" y="16" name="inst_49915FCC" locked="0" code="" scaleX="1" scaleY="124" colour="4294967295" rotation="0"/>
     <instance objName="obj_congress" x="1168" y="96" name="inst_082512D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="34"/>
-    <instance objName="obj_monitor" x="3008" y="2720" name="inst_E1F06AB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor" x="2624" y="2352" name="inst_E1F06AB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_turret" x="3472" y="2848" name="inst_E8354855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cumberland" x="2112" y="2272" name="inst_A34A6DC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="250"/>
     <instance objName="obj_minnesota" x="48" y="2112" name="inst_3FF6C364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cursor" x="128" y="144" name="inst_FB11DBB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

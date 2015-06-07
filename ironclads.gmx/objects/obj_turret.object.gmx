@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = obj_monitor.x
+            <string>if(instance_number(obj_monitor) == 0 or instance_number(obj_merrimack) == 0) exit;
+x = obj_monitor.x
 y = obj_monitor.y
 if(timeout &lt;= 0 and distance_to_object(obj_merrimack) &lt;= RANGE)
 {

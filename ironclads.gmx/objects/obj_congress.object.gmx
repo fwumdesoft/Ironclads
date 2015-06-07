@@ -26,8 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>mouse_in = false
-tooltip = read_all_lines("congress_tooltip.txt", "#");
-
+//tooltip = read_all_lines("congress_tooltip.txt", "#");
+var file = file_text_open_read("congress_tooltip.txt");
+var allLines = "";
+while(not file_text_eof(file))
+    allLines += file_text_readln(file) + "#"
+file_text_close(file)
+tooltip = allLines
 </string>
           </argument>
         </arguments>

@@ -23,7 +23,7 @@ draw_set_valign(fa_bottom);
 text_width  = 5 + string_width(argument0);
 text_height = 5 + string_height(argument0);
 
-if ( ( ( mouse_x - view_xview + text_width) <= ( view_wview - 5) ) && ( mouse_x - text_width ) < view_xview )
+if (( ( mouse_x - view_xview + text_width) <= (view_xview + view_wview - 5) ) && ( mouse_x - text_width ) < view_xview )
 {    
     // Draw rect around the text
     draw_roundrect_color(mouse_x - view_xview,mouse_y - text_height - view_yview,mouse_x + text_width - view_xview, mouse_y + 5 - view_yview, argument3, argument3, false);
