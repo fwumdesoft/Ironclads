@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="3" name="datafiles">
+  <datafiles number="10" name="datafiles">
     <datafile>
       <name>opening.txt</name>
       <exists>-1</exists>
@@ -55,6 +55,91 @@
       </ConfigOptions>
       <filename>lose.txt</filename>
     </datafile>
+    <datafile>
+      <name>congress_tooltip.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>congress_tooltip.txt</filename>
+    </datafile>
+    <datafile>
+      <name>cumberland_tooltip.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>cumberland_tooltip.txt</filename>
+    </datafile>
+    <datafile>
+      <name>minnesota_tooltip.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>minnesota_tooltip.txt</filename>
+    </datafile>
+    <datafile>
+      <name>merrimack_tooltip.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>merrimack_tooltip.txt</filename>
+    </datafile>
+    <datafile>
+      <name>monitor_tooltip.txt</name>
+      <exists>-1</exists>
+      <size>0</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>monitor_tooltip.txt</filename>
+    </datafile>
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
@@ -80,9 +165,12 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\find_quadrant.gml</script>
+    <script>scripts\draw_tooltip.gml</script>
+    <script>scripts\read_all_lines.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_cuts</font>
+    <font>fonts\fnt_tooltips</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_cannonball</object>
@@ -96,7 +184,7 @@
     <object>objects\obj_bounds</object>
     <object>objects\obj_hazard</object>
     <object>objects\obj_congress</object>
-    <object>objects\obj_cumblerland</object>
+    <object>objects\obj_cumberland</object>
     <object>objects\obj_minnesota</object>
   </objects>
   <timelines name="timelines">

@@ -28,6 +28,7 @@
             <string>event_inherited()
 audio_play_sound(snd_monitor_move, 50, true)
 moving = false
+tooltip = read_all_lines("monitor_tooltip.txt", "#");
 </string>
           </argument>
         </arguments>

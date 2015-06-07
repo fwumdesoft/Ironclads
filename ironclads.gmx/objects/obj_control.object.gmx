@@ -97,12 +97,35 @@ if room == rm_main
     exit;
 draw_set_alpha(0.6)
 draw_set_color(c_black)
-draw_text(view_xview, view_yview, "CSS Virginia Hull Integrity")
+draw_text(view_xview, view_yview + 5, "CSS Virginia Hull Integrity")
 draw_healthbar(view_xview, view_yview + 30, view_xview + view_wview / 2 - 20, view_yview + 60, obj_merrimack.sHealth * 10, 0, c_red, c_green, 180, false, false)
 draw_set_color(c_black)
-draw_text(view_xview + view_wview / 2, view_yview, "Unknown Union Vessel Hull Integrity")
+draw_text(view_xview + view_wview / 2, view_yview + 5, "Unknown Union Vessel Hull Integrity")
 draw_healthbar(view_xview + view_wview / 2, view_yview + 30, view_xview + view_wview, view_yview + 60, obj_monitor.sHealth * 10, 0, c_red, c_green, 180, false, false)
 draw_set_alpha(1)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="70">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>window_set_fullscreen(not window_get_fullscreen())
 </string>
           </argument>
         </arguments>

@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>event_inherited()
 audio_play_sound(snd_merrimack_move, 50, true)
+direction = image_angle
+tooltip = read_all_lines("merrimack_tooltip.txt", "#");
 </string>
           </argument>
         </arguments>
@@ -51,15 +53,15 @@ audio_play_sound(snd_merrimack_move, 50, true)
             <kind>1</kind>
             <string>if(keyboard_check(vk_left))
 {
-    direction += 0.1 * speed;
+    direction += 0.2 * speed;
 }
 if(keyboard_check(vk_right))
 {
-    direction -= 0.1 * speed;
+    direction -= 0.2 * speed;
 }
 if(keyboard_check(vk_up))
 {
-    speed += 0.02;
+    speed += friction + 0.01
 }
 if(keyboard_check(ord('A')) and timeout &lt;= 0)
 {

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>sHealth = 10;
 timeout = 0;
-friction = 0.01
+friction = 0.05
 part_system = part_system_create()
 emitter = part_emitter_create(part_system);
 spray = part_type_create()
@@ -36,6 +36,8 @@ part_type_speed(spray, 6, 9, -0.1, 0)
 part_type_colour_hsv(spray, 125, 135, 200, 255, 200, 255)
 part_system_automatic_draw(part_system, false)
 moving = false
+mouse_in = false
+
 </string>
           </argument>
         </arguments>
@@ -89,6 +91,78 @@ if(moving)
     sHealth -= 1
     with(other)
         instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>mouse_in = false
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>mouse_in = true
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(mouse_in)
+{
+    draw_tooltip(tooltip, fnt_tooltips, c_black, c_white, 0.7)
 }
 </string>
           </argument>
