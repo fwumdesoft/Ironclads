@@ -54,7 +54,7 @@ timeline_running = true</code>
   </views>
   <instances>
     <instance objName="obj_control" x="0" y="0" name="inst_546A4635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cutscene" x="32" y="0" name="inst_58D65B2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_textscroll" x="64" y="0" name="inst_A2EA0684" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
