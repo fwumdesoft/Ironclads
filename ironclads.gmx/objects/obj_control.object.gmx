@@ -96,6 +96,7 @@ if room == rm_main
     {
         tile_add(tl_ground, 32, 0, 32, 32, 32, i, tl_depth)
         tile_add(tl_ground, 32, 32, 32, 32, 0, i, tl_depth)
+        tile_add(tl_rightbound, 0, 0, 16, 16, room_width - 64, i, tl_depth)
     }
 }
 </string>

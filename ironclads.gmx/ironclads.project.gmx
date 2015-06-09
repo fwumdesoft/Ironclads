@@ -184,6 +184,7 @@
   <backgrounds name="background">
     <background>background\bkg_water</background>
     <background>background\tl_ground</background>
+    <background>background\tl_rightbound</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -216,8 +217,8 @@
     <timeline>timelines\tl_opening</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_main</room>
     <room>rooms\rm_opening</room>
+    <room>rooms\rm_main</room>
     <room>rooms\rm_win</room>
     <room>rooms\rm_destroyed</room>
     <room>rooms\rm_lose</room>
