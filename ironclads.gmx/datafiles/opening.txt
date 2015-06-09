@@ -15,3 +15,5 @@ The USS Minnesota ran aground during the battle.
 Reports of a new Union ship have reached you.
 Your cannons will make short work of them.
 Destroy the new ship to end the blockade!
+Controls: Use the arrow keys to turn and accelerate your ship.
+Use the W, A, S, and D keys to fire the foward, port, aft, and staboard cannons.
