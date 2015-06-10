@@ -161,12 +161,14 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_pew</sound>
-    <sound>sound\snd_monitor_move</sound>
-    <sound>sound\snd_merrimack_move</sound>
+    <sound>sound\snd_monitor_move1</sound>
+    <sound>sound\snd_merrimack_move1</sound>
     <sound>sound\msc_music</sound>
     <sound>sound\snd_keystroke</sound>
     <sound>sound\snd_impact</sound>
     <sound>sound\snd_explosion</sound>
+    <sound>sound\snd_monitor_move</sound>
+    <sound>sound\snd_merrimack_move</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_placholder</sprite>

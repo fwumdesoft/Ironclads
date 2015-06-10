@@ -170,7 +170,7 @@ else if(keyboard_check(vk_up))
     audio_sound_gain(snd_merrimack_move, 1, 300)
 if(not place_free(x + hspeed, y + vspeed))
 {
-    room_goto(rm_lose)
+    room_goto(rm_destroyed)
     audio_pause_sound(snd_merrimack_move)
     audio_pause_sound(snd_monitor_move)
 }
@@ -196,7 +196,7 @@ if(not place_free(x + hspeed, y + vspeed))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_lose)
+            <string>room_goto(rm_destroyed)
 </string>
           </argument>
         </arguments>

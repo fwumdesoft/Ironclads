@@ -126,6 +126,8 @@ if(room != rm_main)
     exit;
 draw_set_alpha(0.6)
 draw_set_color(c_black)
+draw_set_halign(fa_left)
+draw_set_font(fnt_tooltips)
 draw_text(view_xview, view_yview + 5, "CSS Virginia Hull Integrity")
 draw_healthbar(view_xview, view_yview + 30, view_xview + view_wview / 2 - 20, view_yview + 60, obj_merrimack.sHealth * 10, 0, c_red, c_green, 180, false, false)
 draw_set_color(c_black)

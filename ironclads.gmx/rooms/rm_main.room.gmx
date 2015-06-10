@@ -58,7 +58,7 @@
     <instance objName="obj_bounds" x="3936" y="0" name="inst_A9EE4822" locked="0" code="" scaleX="1" scaleY="124" colour="4294967295" rotation="0"/>
     <instance objName="obj_bounds" x="32" y="16" name="inst_49915FCC" locked="0" code="" scaleX="1" scaleY="124" colour="4294967295" rotation="0"/>
     <instance objName="obj_congress" x="1168" y="96" name="inst_082512D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="34"/>
-    <instance objName="obj_monitor" x="2624" y="2352" name="inst_E1F06AB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_monitor" x="560" y="2144" name="inst_E1F06AB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_turret" x="3472" y="2848" name="inst_E8354855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cumberland" x="2112" y="2272" name="inst_A34A6DC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="250"/>
     <instance objName="obj_minnesota" x="48" y="2112" name="inst_3FF6C364" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

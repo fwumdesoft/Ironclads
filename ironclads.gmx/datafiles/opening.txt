@@ -13,6 +13,7 @@ During the engagement, Captain Buchanan was incapacitated.
 Now, you are the captain.
 The USS Minnesota ran aground during the battle.
 Reports of a new Union ship have reached you.
+According to multiple sources, it appears to be guarding the Monitor on the west bank of the river.
 Your cannons will make short work of them.
 Destroy the new ship to end the blockade!
 Controls: Use the arrow keys to turn and accelerate your ship.
